@@ -1,0 +1,25 @@
+my-law-firm-landing-page/
+├── app/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Home.js
+│   │   ├── Services.js
+│   │   ├── Clients.js
+│   │   ├── ContactForm.js
+│   │   ├── Footer.js
+│   │   ├── ThemeToggle.js
+│   ├── pages/
+│   │   ├── _app.js
+│   │   ├── _document.js
+│   │   ├── index.js
+├── public/
+│   ├── images/
+│   │   ├── background.jpg
+├── styles/
+│   ├── globals.css
+│   ├── tailwind.css
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+├── yarn.lock

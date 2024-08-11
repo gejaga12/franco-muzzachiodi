@@ -33,10 +33,9 @@ export default function Page() {
         <Navbar toggleTheme={toggleTheme} theme={theme} />
         <Home />
         <Services />
-        {/* <About /> */}
-        <Telegramas />
+        {/* <Telegramas />
         <WorkInfo />
-        <ContactForm />
+        <ContactForm /> */}
         <Footer />
         <WhatsAppButton /> 
         <ScrollToTopButton />

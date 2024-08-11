@@ -31,7 +31,7 @@ const ServiceCard: FC<ServiceCardProps> = ({ title, imageSrc, description, addit
       <div className="relative p-6 flex flex-col justify-between md:w-full text-white">
         <div>
           <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="text-sm font-extralight mt-2">{description}</p>
+          <p className="text-sm font-light mt-2">{description}</p>
         </div>
         {showMore && (
           <div className="mt-4">

@@ -42,7 +42,7 @@ const Navbar: FC<NavbarProps> = ({ toggleTheme, theme }) => {
         </div>
         <div className="hidden md:flex space-x-8 items-center">
           <a href="#services" className={`nav-link font-normal text-md ${isScrolled || theme === 'dark' ? 'text-gray-800 dark:text-white' : 'text-white'}`}>
-            SERVICIOS
+          SERVICIOS LEGALES
           </a>
           <a href="#telegramas" className={`nav-link font-normal text-md ${isScrolled || theme === 'dark' ? 'text-gray-800 dark:text-white' : 'text-white'}`}>
           ASESORIA PROFESIONAL

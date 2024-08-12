@@ -26,7 +26,7 @@ const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, co
             ATENDEMOS EN <br /> CIUDAD DE BUENOS AIRES
           </h2>
           <div className="flex mt-2 md:mt-4 space-x-2 md:space-x-4 text-white items-center">            
-            <FaMapMarkerAlt size={16} md={20} />
+            <FaMapMarkerAlt size={16} />
             <h3 className='text-sm md:text-lg'>Av. Corrientes 2458</h3>            
           </div>
           <div className="mt-4 md:mt-6 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full">

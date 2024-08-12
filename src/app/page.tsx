@@ -36,7 +36,7 @@ export default function Page() {
         <LocationHighlight buenosAiresImageSrc={'/images/obelisco.jpg'} corrientesImageSrc={'/images/corrientes.jpg'} />
         {/* <WorkInfo />
         <ContactForm /> */}
-        <Footer />
+        {/* <Footer /> */}
         <WhatsAppButton /> 
         <ScrollToTopButton />
       </div>

@@ -44,7 +44,7 @@ const Navbar: FC<NavbarProps> = ({ toggleTheme, theme }) => {
           <a href="#services" className={`nav-link font-normal text-md ${isScrolled || theme === 'dark' ? 'text-gray-800 dark:text-white' : 'text-white'}`}>
           SERVICIOS LEGALES
           </a>
-          <a href="#telegramas" className={`nav-link font-normal text-md ${isScrolled || theme === 'dark' ? 'text-gray-800 dark:text-white' : 'text-white'}`}>
+          <a href="#location" className={`nav-link font-normal text-md ${isScrolled || theme === 'dark' ? 'text-gray-800 dark:text-white' : 'text-white'}`}>
           ASESORIA PROFESIONAL
           </a>
           <FaUniversity className={`text-2xl ${isScrolled || theme === 'dark' ? 'text-gray-800 dark:text-white' : 'text-white'}`} /> {/* Icono de banco */}

@@ -10,7 +10,7 @@ interface LocationHighlightProps {
 
 const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, corrientesImageSrc }) => {
   return (
-    <section className="flex flex-col md:flex-row h-screen">
+    <section className="flex flex-col md:flex-row h-screen" id='location'>
       
       {/* Ciudad Autónoma de Buenos Aires */}
       <div className="relative bg-black w-full md:w-1/2 h-1/2 md:h-full">

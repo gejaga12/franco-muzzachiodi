@@ -29,7 +29,7 @@ const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, co
             <FaMapMarkerAlt size={16} />
             <h3 className='text-sm md:text-lg'>Av. Corrientes 2458</h3>            
           </div>
-          <div className="mt-4 md:mt-6 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full">
+          <div className="mt-4 md:mt-6 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full justify-center">
             <button className="flex items-center justify-center border-2 bg-black bg-opacity-50 border-white text-white px-3 py-2 text-sm rounded-lg w-full md:w-auto">
               <FiMessageSquare size={16} className="mr-2" /> CONSULTA
             </button>
@@ -60,7 +60,7 @@ const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, co
             <FaMapMarkerAlt size={16} />
             <h3 className='text-sm md:text-lg'>Av. 3 de Abril 2458</h3>            
           </div>
-          <div className="mt-4 md:mt-6 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full">
+          <div className="mt-4 md:mt-6 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full  justify-center">
             <button className="flex items-center justify-center border-2 bg-black bg-opacity-50 border-white text-white px-3 py-2 text-sm rounded-lg w-full md:w-auto">
               <FiMessageSquare size={16} className="mr-2" /> CONSULTA
             </button>

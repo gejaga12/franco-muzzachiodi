@@ -30,7 +30,7 @@ const WhatsAppButton = () => {
         <div className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg z-50 md:right-4 md:w-96 w-[90%] ">
           <div className="bg-[#25D366] text-white rounded-t-lg p-4 flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <Image src="/images/matiasledesma.webp" alt="Profile" width={32} height={32} className="rounded-full" />
+              <Image src="/images/franco.jpeg" alt="Profile" width={32} height={32} className="rounded-full" />
               <div className="flex flex-col">
                 <span className="text-sm font-bold">Franco Muzzachiodi & Asociados</span>
                 <span className="text-xs text-gray-200">online</span>
@@ -42,7 +42,7 @@ const WhatsAppButton = () => {
           </div>
           <div className="p-4">
             <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              <p className="text-gray-800 text-sm">Hola 👋 <br /> ¿En qué puedo ayudarte?</p>
+              <p className="text-gray-800 text-sm">Bienvenido soy el Dr. Franco Muzzachiodi 👋 <br /> ¿En qué puedo ayudarte?</p>
             </div>
             <a
               href="https://wa.me/+5401166959255"

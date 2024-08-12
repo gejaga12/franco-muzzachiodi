@@ -14,7 +14,7 @@ import CustomModal from './components/pop-up/Modal';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTopButton from './components/common/ScrollToTopButton';
-import Telegramas from './components/telegrama/Telegramas';
+import LocationHighlight from './components/info/LocationHighlight';
 
 export default function Page() {
   const { theme, toggleTheme } = ThemeToggle();
@@ -33,8 +33,8 @@ export default function Page() {
         <Navbar toggleTheme={toggleTheme} theme={theme} />
         <Home />
         <Services />
-        {/* <Telegramas />
-        <WorkInfo />
+        <LocationHighlight buenosAiresImageSrc={'/images/obelisco.jpg'} corrientesImageSrc={'/images/corrientes.jpg'} />
+        {/* <WorkInfo />
         <ContactForm /> */}
         <Footer />
         <WhatsAppButton /> 

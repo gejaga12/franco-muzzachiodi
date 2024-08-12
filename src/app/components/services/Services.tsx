@@ -5,7 +5,7 @@ const Services = () => (
   <>
     <section id="services" className="min-h-screen p-8 bg-gray-200 dark:bg-gray-800 text-black dark:text-white flex flex-col justify-center">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center" data-aos="fade-up">SERVICIOS LEGALES</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white" data-aos="fade-up">SERVICIOS LEGALES</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ServiceCard 
             title="Familia y Sucesiones"

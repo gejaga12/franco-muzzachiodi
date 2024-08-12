@@ -1,6 +1,6 @@
 import { useState, FC } from 'react';
 import Image from 'next/image';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 interface ServiceCardProps {
   title: string;
@@ -44,9 +44,9 @@ const ServiceCard: FC<ServiceCardProps> = ({ title, imageSrc, description, addit
         )}
         <button
           onClick={toggleShowMore}
-          className="mt-4 text-blue-400 hover:text-blue-500 underline"
+          className="mt-4 text-white text-center hover:text-blue-500 flex items-center justify-center"
         >
-          {showMore ? 'Ver menos' : 'Ver más'}
+          {showMore ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
         </button>
       </div>
     </div>

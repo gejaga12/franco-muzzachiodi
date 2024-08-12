@@ -32,7 +32,7 @@ const WhatsAppButton = () => {
             <div className="flex items-center space-x-2">
               <Image src="/images/matiasledesma.webp" alt="Profile" width={32} height={32} className="rounded-full" />
               <div className="flex flex-col">
-                <span className="text-sm font-bold">Dr. Matias Ledesma</span>
+                <span className="text-sm font-bold">Franco Muzzachiodi & Asociados</span>
                 <span className="text-xs text-gray-200">online</span>
               </div>
             </div>

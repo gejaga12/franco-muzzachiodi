@@ -39,7 +39,7 @@ const CustomModal = () => {
         </button>
         <div className="relative w-full h-96">
           <Image
-            src="/images/penal.webp" // Ruta de la imagen cargada
+            src="/images/img3.jpg" // Ruta de la imagen cargada
             alt="Promotional Image"
             fill
             objectFit="cover"
@@ -47,18 +47,45 @@ const CustomModal = () => {
             className="rounded-lg"
           />
           <div className="absolute inset-0 flex flex-col justify-center p-8 bg-black bg-opacity-50">
-            <h1 className="text-3xl md:text-4xl lg:text-4xl text-white font-bold mb-0">DERECHO DE FAMILIA</h1>
-            <h1 className="text-3xl md:text-4xl lg:text-4xl text-white font-bold mb-4">LABORAL, CIVIL Y PENAL</h1>
-            <span className="text-2xl md:text-2xl lg:text-2xl text-white font-light mb-4 flex">
-              <IoArrowForwardCircle className="mr-2 mt-2 text-yellow-500 hover:scale-110 transition-transform duration-300" size={20} />
-              Asesoramiento las 24hs.
+            {/* <h1 className="text-2xl md:text-3xl lg:text-3xl text-white font-bold mb-0">DERECHO DE FAMILIA, LABORAL, PENAL Y CIVIL</h1>
+            <h1 className="text-2xl md:text-3xl lg:text-3xl text-white font-bold mb-4"></h1> */}
+             <div className="flex flex-col mb-3">
+          <span className="text-4xl font-serif font-bold text-white text-center">Franco Muzzachiodi</span>
+          <span className="text-lg tracking-widest text-white text-center"> & ASOCIADOS</span>
+        </div>
+            <span className="text-xl text-white font-light mb-2 flex items-center">
+              <IoArrowForwardCircle className="mr-2 mt-2 text-green-500 bg-white rounded-full" size={20} />
+              Asesoramiento las 24hs
             </span>
+            <span className="text-xl text-white font-light mb-2 flex">
+              <IoArrowForwardCircle className="mr-2 mt-2 text-green-500 bg-white rounded-full " size={20} />
+              Sucesiones, Divorcios, Prescripciones
+            </span>
+            <span className="text-xl text-white font-light mb-2 flex">
+              <IoArrowForwardCircle className="mr-2 mt-2 text-green-500 bg-white rounded-full " size={20} />
+              Accidentes de Tránsito y A.R.T
+            </span>
+            <span className="text-xl text-white font-light mb-2 flex">
+              <IoArrowForwardCircle className="mr-2 mt-2 text-green-500 bg-white rounded-full " size={20} />
+              Despidos Laborales sin justa causa
+            </span>
+            <span className="text-xl text-white font-light mb-2 flex">
+              <IoArrowForwardCircle className="mr-2 mt-2 text-green-500 bg-white rounded-full " size={20} />
+              Amparos de Salud a prepagas
+            </span>
+            <span className="text-xl text-white font-light mb-2 flex">
+              <IoArrowForwardCircle className="mr-2 mt-2 text-green-500 bg-white rounded-full " size={20} />
+              Impuestos a las Ganancias
+            </span>
+              <div className='flex justify-center'>
             <button
               onClick={handleContactClick}
-              className="px-6 py-2 bg-yellow-500 text-black font-bold rounded-full hover:bg-yellow-400 w-fit transition duration-300"
+              className="px-6 py-2 mt-5 bg-green-500 text-black font-bold rounded-lg hover:bg-green-400 w-fit transition duration-300"
             >
               Contáctanos
             </button>
+
+              </div>
           </div>
         </div>
       </div>

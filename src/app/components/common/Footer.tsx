@@ -2,22 +2,33 @@ import { FaLinkedin, FaInstagram, FaFacebook, FaPhone, FaEnvelope, FaMapMarkerAl
 
 const Footer = () => (
   <footer className="py-8 bg-gray-300 dark:bg-gray-900 text-black dark:text-white">
-    <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      {/* Suscripción al Newsletter */}
+      <div className="col-span-1 md:col-span-2">
+        <h3 className="text-lg font-bold mb-4">Subscribe Our Newsletters</h3>
+        <p className="text-sm mb-4">
+          This sounded a very good reason, and Alice was quite pleased to know it. I never thought of that before! she said.
+        </p>
+        <form className="flex items-center space-x-2">
+          <input
+            type="email"
+            placeholder="Please enter your email"
+            className="w-full p-2 rounded-lg text-black"
+          />
+          <button className="bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
       {/* Logo y descripción */}
-      <div className="flex flex-col items-center md:items-start mb-8 md:mb-0 w-full md:w-1/3 text-center md:text-left gap-5">
-        <div className="flex items-center space-x-2">
-          <div className="flex items-center space-x-1">
-            <div className="w-10 h-10 rounded-full border-2 border-gray-800 dark:border-white flex items-center justify-center text-gray-800 dark:text-white font-bold">
-              ML
-            </div>
-            <div className="border-l-2 border-gray-800 dark:border-white h-10"></div>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-2xl font-serif font-bold text-gray-800 dark:text-white">Matías Ledesma</span>
-            <span className="text-sm tracking-widest text-gray-600 dark:text-gray-300">ABOGADO</span>
-          </div>
+      <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
+        <div className="flex flex-col">
+          <span className="text-2xl font-serif font-bold text-gray-800 dark:text-white">Franco Muzzachiodi</span>
+          <span className="text-sm tracking-widest text-gray-600 dark:text-gray-300"> & ASOCIADOS</span>
         </div>
-        <p className="text-gray-600 dark:text-gray-300 max-w-xs text-sm">
+        <p className="text-gray-600 dark:text-gray-300 max-w-xs text-sm mt-4">
           Somos abogados independientes con experiencia en el ejercicio de la profesión en el ámbito de Capital Federal.
         </p>
         <div className="flex space-x-6 mt-4">
@@ -27,8 +38,12 @@ const Footer = () => (
         </div>
       </div>
 
+    </div>
+
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 border-t-2 border-gray-400 dark:border-gray-400 pt-4">
+      
       {/* Links de interés */}
-      <div className="w-full md:w-1/3 text-center md:text-left">
+      <div className="text-center md:text-left">
         <h3 className="text-lg font-bold mb-4">Links de interés</h3>
         <ul className="list-none p-0 m-0 flex flex-col items-center md:items-start space-y-2">
           <li className="w-full"><a href="#home" className="text-gray-800 dark:text-white hover:underline block text-sm">Inicio</a></li>
@@ -39,7 +54,7 @@ const Footer = () => (
       </div>
 
       {/* Información de contacto */}
-      <div className="w-full md:w-1/3 text-center md:text-left hidden md:block">
+      <div className="text-center md:text-left">
         <h3 className="text-lg font-bold mb-4">Nuestra info</h3>
         <ul className="list-none p-0 m-0 flex flex-col items-center md:items-start space-y-2">
           <li className="w-full flex items-center">
@@ -56,10 +71,11 @@ const Footer = () => (
           </li>
         </ul>
       </div>
+
     </div>
 
-    <div className="container mx-auto mt-8 text-center text-xs text-gray-600 dark:text-gray-400 border-t-2 border-gray-400 dark:border-gray-400 pt-4 ">
-      &copy; {new Date().getFullYear()}. Matías Ledesma Abogado | Todos los derechos reservados.       
+    <div className="container mx-auto mt-8 text-center text-xs text-gray-600 dark:text-gray-400 pt-4">
+      &copy; {new Date().getFullYear()}. Franco Muzzachiodi & Asociados | Todos los derechos reservados.       
       <div>Developed by <a target='_blank' href="https://wa.me/+543772542429" className='font-semibold text-xs'>GG</a>. </div>
     </div>
   </footer>

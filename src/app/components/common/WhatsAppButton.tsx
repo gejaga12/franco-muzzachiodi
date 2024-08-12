@@ -45,7 +45,7 @@ const WhatsAppButton = () => {
               <p className="text-gray-800 text-sm">Bienvenido soy el Dr. Franco Muzzachiodi 👋 <br /> ¿En qué puedo ayudarte?</p>
             </div>
             <a
-              href="https://wa.me/+5401166959255"
+              href="https://wa.me/+5493794555818"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white p-3 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors text-sm"

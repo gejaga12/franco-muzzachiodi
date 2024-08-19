@@ -7,8 +7,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -34.6037, // Reemplaza con la latitud obtenida
-  lng: -58.3816  // Reemplaza con la longitud obtenida
+  lat: -27.4712, // Latitud de Corrientes Capital
+  lng: -58.8396  // Longitud de Corrientes Capital
 };
 
 const GoogleMapComponent = () => {

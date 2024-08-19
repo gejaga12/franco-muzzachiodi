@@ -2,6 +2,8 @@ import { useState } from 'react';
 import GoogleMapComponent from './GoogleMapComponent ';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
+import { BiUserCircle, BiMessageDetail } from 'react-icons/bi';
+import { AiOutlineMail, AiOutlineSend } from 'react-icons/ai';
 
 interface FormValues {
   from_name: string;
@@ -77,56 +79,69 @@ const ContactForm = () => {
         <GoogleMapComponent />
       </div>
       <div className="w-full lg:w-1/2 pl-0 lg:pl-8 pt-36 lg:pt-0">
-        <h2 className="text-3xl font-bold mb-4">Contacto</h2>
+        <h2 className="text-3xl font-bold mb-4">CONTACTO</h2>
         <p className="text-md text-gray-800 dark:text-gray-300">¡No dude en realizar su consulta! Estamos aquí para ayudarle y ofrecerle el mejor asesoramiento legal.</p>
         <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
           <div>
-            <label className="block text-lg text-gray-800 dark:text-white">
-              Nombre <span className="text-red-500">*</span>
+            <label className="text-lg text-gray-800 dark:text-white flex items-center mb-2">
+              <BiUserCircle className="mr-2" size={20} /> 
+              <span>Nombre</span>
             </label>
-            <input
-              type="text"
-              name="from_name"
-              className="w-full p-2 border rounded-lg text-gray-700"
-              value={formValues.from_name}
-              onChange={handleInputChange}
-              required
-            />
+            <div className="relative">
+              <input
+                type="text"
+                name="from_name"
+                className="w-full p-2 border rounded-lg text-gray-700"
+                value={formValues.from_name}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
             {errors.from_name && <p className="text-red-500 text-sm">{errors.from_name}</p>}
           </div>
           <div>
-            <label className="block text-lg text-gray-800 dark:text-white">
-              Email <span className="text-red-500">*</span>
+            <label className="text-lg text-gray-800 dark:text-white flex items-center mb-2">
+              <AiOutlineMail className="mr-2" size={20}/> 
+              <span>Email</span>
             </label>
-            <input
-              type="email"
-              name="reply_to"
-              className="w-full p-2 border rounded-lg text-gray-700"
-              value={formValues.reply_to}
-              onChange={handleInputChange}
-              required
-            />
+            <div className="relative">
+              <input
+                type="email"
+                name="reply_to"
+                className="w-full p-2 border rounded-lg text-gray-700"
+                value={formValues.reply_to}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
             {errors.reply_to && <p className="text-red-500 text-sm">{errors.reply_to}</p>}
           </div>
           <div>
-            <label className="block text-lg text-gray-800 dark:text-white">
-              Mensaje <span className="text-red-500">*</span>
+            <label className="text-lg text-gray-800 dark:text-white flex items-center mb-2">
+              <BiMessageDetail className="mr-2" size={20}/> 
+              <span>Mensaje</span>
             </label>
-            <textarea
-              name="message"
-              className="w-full p-2 border rounded-lg text-gray-700"
-              value={formValues.message}
-              onChange={handleInputChange}
-              required
-            ></textarea>
+            <div className="relative">
+              <textarea
+                name="message"
+                className="w-full p-2 border rounded-lg text-gray-700"
+                value={formValues.message}
+                onChange={handleInputChange}
+                required
+              ></textarea>
+            </div>
             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
           <button
             type="submit"
-            className={`px-6 py-2 bg-gray-900 text-white rounded-lg ${isSubmitting ? 'cursor-not-allowed opacity-50' : 'hover:bg-gray-600'} focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:scale-105`}
+            className={`flex items-center justify-center px-6 py-2 bg-gray-900 text-white rounded-lg ${isSubmitting ? 'cursor-not-allowed opacity-50' : 'hover:bg-gray-600'} focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:scale-105`}
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
+            {isSubmitting ? 'Enviando...' : (
+              <>
+                <AiOutlineSend className="mr-2" /> Enviar Mensaje
+              </>
+            )}
           </button>
         </form>
       </div>

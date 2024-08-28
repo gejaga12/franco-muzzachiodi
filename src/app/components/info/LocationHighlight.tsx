@@ -22,7 +22,7 @@ const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, co
           className="opacity-50"
         />
         <div className="absolute inset-0 flex items-center justify-center flex-col p-6 md:p-10">
-          <h2 className="text-white text-xl md:text-3xl font-bold text-center">
+          <h2 className="text-white text-xl md:text-3xl font-bold text-center font-serif">
             ATENDEMOS EN <br /> CIUDAD DE BUENOS AIRES
           </h2>
           <div className="flex mt-2 md:mt-4 space-x-2 md:space-x-4 text-white items-center">            
@@ -53,7 +53,7 @@ const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, co
           className="opacity-50"
         />
         <div className="absolute inset-0 flex items-center justify-center flex-col p-6 md:p-10">
-          <h2 className="text-white text-xl md:text-3xl font-bold text-center">
+          <h2 className="text-white text-xl md:text-3xl font-bold text-center font-serif">
             ATENDEMOS EN <br /> CIUDAD DE CORRIENTES CAPITAL
           </h2>
           <div className="flex mt-2 md:mt-4 space-x-2 md:space-x-4 text-white items-center">            

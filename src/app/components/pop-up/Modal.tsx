@@ -29,9 +29,9 @@ const CustomModal = () => {
       onRequestClose={closeModal}
       contentLabel="Promotional Modal"
       className="flex items-center justify-center h-screen"
-      overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-50"
+      overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-50"      
     >
-      <div className="relative bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-2xl">
+      <div className="relative bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-2xl" data-aos="zoom-in">
         <button onClick={closeModal} className="absolute top-2 right-2 text-black z-50">
           <span className="text-2xl text-white cursor-pointer">
             <IoIosCloseCircleOutline className="mr-2 mt-2 text-white hover:scale-110 transition-transform duration-300" size={20} />

@@ -76,10 +76,10 @@ const ContactForm = () => {
   return (
     <section className="min-h-screen p-8 bg-gray-200 dark:bg-gray-800 text-black dark:text-white flex flex-col lg:flex-row items-center" id="contact">
       <div className="w-full h-64 lg:w-1/2 lg:h-full pr-0 lg:pr-8 mb-8 lg:mb-0">
-        <GoogleMapComponent />
+        {/* <GoogleMapComponent /> */}
       </div>
       <div className="w-full lg:w-1/2 pl-0 lg:pl-8 pt-36 lg:pt-0">
-        <h2 className="text-3xl font-bold mb-4">CONTACTO</h2>
+        <h2 className="text-3xl font-bold mb-4 font-serif">CONTACTO</h2>
         <p className="text-md text-gray-800 dark:text-gray-300">¡No dude en realizar su consulta! Estamos aquí para ayudarle y ofrecerle el mejor asesoramiento legal.</p>
         <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
           <div>

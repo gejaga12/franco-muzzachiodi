@@ -1,0 +1,9 @@
+  {/* <p className="text-xl text-white font-semibold mb-6">
+          ¡Entrevistas personales o videollamada!
+        </p>
+        <a href="#contact" className="px-6 py-3 bg-yellow-500 text-black font-bold rounded-full mb-4">
+          Contacto
+        </a>
+        <a href="https://wa.me/1234567890" className="text-3xl text-green-500">
+          <i className="fab fa-whatsapp"></i>
+        </a> */}

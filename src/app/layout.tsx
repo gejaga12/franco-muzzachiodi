@@ -1,3 +1,4 @@
+// RootLayout.jsx
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
@@ -5,7 +6,7 @@ import "./globals.css";
 // Importa la fuente Roboto desde Google Fonts
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "700", "100", "300", "700", "900"], // Puedes ajustar los pesos según lo necesites
+  weight: ["400", "700", "100", "300", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -20,8 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es"> {/* Cambié el idioma a "es" si tu público objetivo habla español */}
-      <body className={roboto.className}>{children}</body>
+    <html lang="es">
+      {/* Aplica una clase general que puedes definir en tu CSS global */}
+      <body className={`font-roboto`}>{children}</body>
     </html>
   );
 }

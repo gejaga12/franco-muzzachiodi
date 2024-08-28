@@ -3,15 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Estilos adicionales */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-  }
   
   .font-serif {
     font-family: 'Playfair Display', serif;
@@ -47,3 +38,8 @@ body {
   .opacity-100 {
     opacity: 1;
   }
+
+  /* globals.css */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}

@@ -58,7 +58,7 @@ const Home = () => (
       {/* Botón de contacto */}
       <a
         href="#contact"
-        className="px-4 py-2 sm:px-6 sm:py-3 bg-yellow-500 text-black font-bold rounded-full mb-4 hover:bg-yellow-600 transition-colors"
+        className="px-4 py-2 sm:px-6 sm:py-3 bg-green-500 text-white font-bold rounded-lg mb-4 hover:bg-green-600 transition-colors"
       >
         Contáctanos
       </a>

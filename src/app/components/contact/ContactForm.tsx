@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import GoogleMapComponent from './GoogleMapComponent ';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import { BiUserCircle, BiMessageDetail } from 'react-icons/bi';
@@ -26,8 +25,7 @@ const ContactForm = () => {
       ...formValues,
       [name]: value
     });
-
-    // Limpiar errores al cambiar el valor
+  
     setErrors({
       ...errors,
       [name]: ''
@@ -52,7 +50,7 @@ const ContactForm = () => {
           setIsSubmitting(false);
           Swal.fire({
             title: '¡Gracias por ponerte en contacto!',
-            html: 'Tu mensaje ha sido enviado con éxito en breve nos comunicaremos con vos.',
+            html: 'Tu mensaje ha sido enviado con éxito. En breve nos comunicaremos contigo.',
             confirmButtonColor: '#111827'
           });
           setFormValues({
@@ -75,13 +73,27 @@ const ContactForm = () => {
 
   return (
     <section className="min-h-screen p-8 bg-gray-200 dark:bg-gray-800 text-black dark:text-white flex flex-col lg:flex-row items-center" id="contact">
-      <div className="w-full h-64 lg:w-1/2 lg:h-full pr-0 lg:pr-8 mb-8 lg:mb-0">
-        {/* <GoogleMapComponent /> */}
+      {/* Card de Diligenciar un Trámite */}
+      <div className="w-full lg:w-1/2 lg:pr-8 flex justify-center mb-8 lg:mb-0">
+        <div className="bg-white dark:bg-gray-700 shadow-lg rounded-xl p-8 hover:shadow-2xl">
+          <h3 className="text-2xl font-bold mb-4 text-center text-gray-800 dark:text-white">DILIGENCIAR UN TRÁMITE EN BUENOS AIRES</h3>
+          <p className="text-md text-gray-600 dark:text-gray-300 mb-6">Ofrecemos asistencia personalizada para todos tus trámites en Buenos Aires. Ya sea para consultas legales, gestiones administrativas, o cualquier otra necesidad, estamos aquí para ayudarte.</p>
+          <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 mb-6">
+            <li>Asesoría en tiempo real.</li>
+            <li>Servicio de videollamada disponible.</li>
+            <li>Gestión integral de trámites.</li>
+          </ul>
+          <button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+            Solicitar Asistencia
+          </button>
+        </div>
       </div>
-      <div className="w-full lg:w-1/2 pl-0 lg:pl-8 pt-36 lg:pt-0">
+
+      {/* Formulario de Contacto */}
+      <div className="w-full lg:w-1/2 lg:pl-8">
         <h2 className="text-3xl font-bold mb-4 font-serif">CONTACTO</h2>
-        <p className="text-md text-gray-800 dark:text-gray-300">¡No dude en realizar su consulta! Estamos aquí para ayudarle y ofrecerle el mejor asesoramiento legal.</p>
-        <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
+        <p className="text-md text-gray-800 dark:text-gray-300 mb-6">¡No dude en realizar su consulta! Estamos aquí para ayudarle y ofrecerle el mejor asesoramiento legal.</p>
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
             <label className="text-lg text-gray-800 dark:text-white flex items-center mb-2">
               <BiUserCircle className="mr-2" size={20} /> 
@@ -134,7 +146,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className={`flex items-center justify-center px-6 py-2 bg-gray-900 text-white rounded-lg ${isSubmitting ? 'cursor-not-allowed opacity-50' : 'hover:bg-gray-600'} focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:scale-105`}
+            className={`flex items-center justify-center px-6 py-2 bg-gray-900 text-white rounded-lg ${isSubmitting ? 'cursor-not-allowed opacity-50' : 'hover:bg-gray-600'} focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50`}
             disabled={isSubmitting}
           >
             {isSubmitting ? 'Enviando...' : (

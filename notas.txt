@@ -6,4 +6,4 @@
         </a>
         <a href="https://wa.me/1234567890" className="text-3xl text-green-500">
           <i className="fab fa-whatsapp"></i>
-        </a> */}
+        </a> */}z

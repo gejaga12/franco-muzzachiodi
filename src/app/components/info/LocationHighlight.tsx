@@ -13,7 +13,7 @@ const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, co
     <section className="flex flex-col md:flex-row h-auto md:h-screen" id='location'>
       
       {/* Ciudad Autónoma de Buenos Aires */}
-      <div className="relative bg-black w-full md:w-1/2 h-96 md:h-full">
+      {/* <div className="relative bg-black w-full md:w-1/2 h-96 md:h-full">
         <Image 
           src={buenosAiresImageSrc} 
           alt="Ciudad Autónoma de Buenos Aires" 
@@ -41,10 +41,10 @@ const LocationHighlight: FC<LocationHighlightProps> = ({ buenosAiresImageSrc, co
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Ciudad de Corrientes Capital */}
-      <div className="relative bg-black w-full md:w-1/2 h-96 md:h-full">
+      <div className="relative bg-black w-full ">
         <Image 
           src={corrientesImageSrc} 
           alt="Ciudad de Corrientes Capital" 

@@ -46,9 +46,9 @@ const Services = () => (
             link="#"
           />
           <ServiceCard 
-            title="Amparos de Salud y Prepagas"
+            title="Derecho Penal"
             imageSrc="/images/img7.jpg"
-            description="Asesoramiento y representación en casos de amparos de salud, asegurando que las prepagas y seguros cumplan con sus obligaciones."
+            description="Defensa Penal. Orentacion y asesoramientoe en materia penal. Preparacion de defensa. Negociacion de acuerdos con fiscalia.  Defensa en caso de violencia domestica."
             additionalInfo={[
               'Reclamos contra prepagas',
               'Amparos por tratamientos médicos',

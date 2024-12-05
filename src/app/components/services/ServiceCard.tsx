@@ -18,7 +18,7 @@ const ServiceCard: FC<ServiceCardProps> = ({ title, imageSrc, description, addit
   };
 
   return (
-    <div className="relative bg-black dark:bg-black rounded-lg shadow-lg hover:shadow-black overflow-hidden flex flex-col md:flex-row transition-transform transform hover:scale-105" data-aos="fade-up">
+    <div className="relative bg-black dark:bg-black rounded-lg shadow-lg hover:shadow-gray-600 overflow-hidden flex flex-col md:flex-row transition-transform transform hover:scale-105" data-aos="fade-up">
       <div className="absolute inset-0">
         <Image 
           src={imageSrc} 

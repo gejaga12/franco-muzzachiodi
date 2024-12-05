@@ -45,7 +45,7 @@ const ContactForm = () => {
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
       setIsSubmitting(true);
-      emailjs.sendForm('service_lvilpoe', 'template_qh6nghr', event.target as HTMLFormElement, 'xSYdNx6M-wFz6YpKC')
+      emailjs.sendForm('service_8a99krd', 'template_69z53xo', event.target as HTMLFormElement, '3ooffi-k8RYBhaokk')
         .then((result) => {
           setIsSubmitting(false);
           Swal.fire({
@@ -76,8 +76,8 @@ const ContactForm = () => {
       {/* Card de Diligenciar un Trámite */}
       <div className="w-full lg:w-1/2 lg:pr-8 flex justify-center mb-8 lg:mb-0">
         <div className="bg-white dark:bg-gray-700 shadow-lg rounded-xl p-8 hover:shadow-2xl">
-          <h3 className="text-2xl font-bold mb-4 text-center text-gray-800 dark:text-white">DILIGENCIAR UN TRÁMITE EN BUENOS AIRES</h3>
-          <p className="text-md text-gray-600 dark:text-gray-300 mb-6">Ofrecemos asistencia personalizada para todos tus trámites en Buenos Aires. Ya sea para consultas legales, gestiones administrativas, o cualquier otra necesidad, estamos aquí para ayudarte.</p>
+          <h3 className="text-2xl font-bold mb-4 text-center text-gray-800 dark:text-white">TRABAJOS DE PROCURACIÓN</h3>
+          <p className="text-md text-gray-600 dark:text-gray-300 mb-6">Ofrecemos asistencia personalizada para todos tus trámites en la provincia de corrientes. Ya sea para gestiones administrativas o judiciales, estamos aquí para ayudarte.</p>
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 mb-6">
             <li>Asesoría en tiempo real.</li>
             <li>Servicio de videollamada disponible.</li>
